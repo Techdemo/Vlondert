@@ -1,9 +1,26 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
+import { AuthContext } from '../../../components/modules/Firebase/authcontext';
 
-const login = () => {
+import { LoginUserForm } from './components';
+
+import * as ROUTES from '../../../../config/routes';
+
+const LoginScreen = () => {
+  let history = useHistory();
+  const { user } = React.useContext(AuthContext)
+
+  React.useEffect(() => {
+    if(user) {
+      history.push(ROUTES.MAP)
+    } 
+  }, [user])
+
   return (
-    <h1>dit is de loginpage</h1>
+    <>
+      <LoginUserForm />
+    </>
   )
 }
 
-export default login;
+export default LoginScreen;

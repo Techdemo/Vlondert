@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 export const Nav = styled.nav`
   box-shadow: 0 5px 27px 5px rgba(0,0,0,0.50);
-  height: 12.5%;
+  height: 10%;
+  z-index: 99;
   overflow: hidden;
   position: fixed;
   bottom: 0;

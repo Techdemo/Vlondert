@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="33px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="13" y="9" width="284" height="25"></rect>
+        <filter x="-17.8%" y="-182.0%" width="135.6%" height="504.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="13.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navbar" transform="translate(-242.000000, -7.000000)">
+            <g>
+                <g id="shadow-rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0.697247706" width="320" height="51"></rect>
+            </g>
+            <g id="clipboard-1" transform="translate(242.000000, 7.000000)" fill="#008926" fill-rule="nonzero">
+                <path d="M20.0943939,2.55817738 L15.2091519,2.55817738 L15.2091519,0.878763222 C15.2091519,0.39544345 14.8016291,0 14.3035458,0 L6.69645424,0 C6.19837087,0 5.79084811,0.39544345 5.79084811,0.878763222 L5.79084811,5.52156225 C5.79084811,6.00488202 6.19837087,6.40032547 6.69645424,6.40032547 L12.3162434,6.40032547 C12.8143268,6.40032547 13.2218495,6.00488202 13.2218495,5.52156225 C13.2218495,5.03824247 12.8143268,4.64279902 12.3162434,4.64279902 L7.60206037,4.64279902 L7.60206037,1.75752644 L13.3929085,1.75752644 L13.3929085,3.44182262 C13.3929085,3.92514239 13.8004312,4.32058584 14.2985146,4.32058584 L19.1837566,4.32058584 L19.1837566,22.2473556 L1.81121227,22.2473556 L1.81121227,4.31570382 L3.20483948,4.31570382 C3.70292286,4.31570382 4.11044562,3.92026037 4.11044562,3.4369406 C4.11044562,2.95362083 3.70292286,2.55817738 3.20483948,2.55817738 L0.905606133,2.55817738 C0.40752276,2.55817738 0,2.95362083 0,3.4369406 L0,23.1212368 C0,23.6045566 0.40752276,24 0.905606133,24 L20.0943939,24 C20.5924772,24 21,23.6045566 21,23.1212368 L21,3.4369406 C21,2.95362083 20.5924772,2.55817738 20.0943939,2.55817738 Z" id="Path"></path>
+                <path d="M15.0873239,14 L7.91267606,14 C7.41070423,14 7,14.45 7,15 C7,15.55 7.41070423,16 7.91267606,16 L15.0873239,16 C15.5892958,16 16,15.55 16,15 C16,14.45 15.5892958,14 15.0873239,14 Z" id="Path"></path>
+                <path d="M15.0873239,10 L7.91267606,10 C7.41070423,10 7,10.45 7,11 C7,11.55 7.41070423,12 7.91267606,12 L15.0873239,12 C15.5892958,12 16,11.55 16,11 C16,10.45 15.5892958,10 15.0873239,10 Z" id="Path"></path>
+                <circle id="Oval" cx="5" cy="11" r="1"></circle>
+                <circle id="Oval" cx="5" cy="15" r="1"></circle>
+                <path d="M15.0873239,18 L7.91267606,18 C7.41070423,18 7,18.45 7,19 C7,19.55 7.41070423,20 7.91267606,20 L15.0873239,20 C15.5892958,20 16,19.55 16,19 C16,18.45 15.5892958,18 15.0873239,18 Z" id="Path"></path>
+                <circle id="Oval" cx="5" cy="19" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

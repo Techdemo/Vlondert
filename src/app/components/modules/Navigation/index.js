@@ -10,7 +10,7 @@ const Navigation = () => {
     <Nav>
       <NavList>
         <NavItem>
-          <LinkElem to={ROUTES.APPLICATIONS}>
+          <LinkElem to={ROUTES.NOTIFICATIONS}>
             <NotificationIcon />
               Notificaties
           </LinkElem>
@@ -22,7 +22,7 @@ const Navigation = () => {
           </LinkElem>
         </NavItem>
         <NavItem>
-          <LinkElem to={ROUTES.SETTINGS}>
+          <LinkElem to={ROUTES.APPLICATIONS}>
             <ApplicationIcon />
               Aanvragen
           </LinkElem>

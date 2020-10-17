@@ -10,19 +10,34 @@ const Navigation = () => {
     <Nav>
       <NavList>
         <NavItem>
-          <LinkElem to={ROUTES.NOTIFICATIONS}>
+          <LinkElem 
+            to={ROUTES.NOTIFICATIONS}
+            activeStyle={{
+              borderTop: '3px solid rgb(0, 136, 51, .8)',
+            }}
+          >
             <NotificationIcon />
               Notificaties
           </LinkElem>
         </NavItem>
         <NavItem>
-          <LinkElem to={ROUTES.MAP}>
+          <LinkElem 
+            to={ROUTES.MAP}
+            activeStyle={{
+              borderTop: '3px solid rgb(0, 136, 51, .8)',
+            }}
+          >
             <MapIcon />
               Kaart
           </LinkElem>
         </NavItem>
         <NavItem>
-          <LinkElem to={ROUTES.APPLICATIONS}>
+          <LinkElem 
+            to={ROUTES.APPLICATIONS}
+            activeStyle={{
+              borderTop: '3px solid rgb(0, 136, 51, .8)',
+            }}
+          >
             <ApplicationIcon />
               Aanvragen
           </LinkElem>

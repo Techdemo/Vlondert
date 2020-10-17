@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const Nav = styled.nav`
   box-shadow: 0 5px 27px 5px rgba(0,0,0,0.50);
   height: 10%;
-  z-index: 99;
+  z-index: 2;
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -29,15 +29,19 @@ export const NavItem = styled.li`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  transition: all 0.2s ease-out;
   height: 100%; 
   width: 100%;
   a {
     text-decoration: none; 
     font-family: 'Arial-Regular';
     color: ${props => props.theme.colors.green};
-    &.active {
-     
-    }
+  }
+  
+
+  svg {
+    width: 100%;
+    height: 28px;
   }
 `;
 
@@ -46,5 +50,6 @@ export const LinkElem = styled(NavLink)`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  transition: all 0.2s ease-out;
   height: 100%; 
 `;

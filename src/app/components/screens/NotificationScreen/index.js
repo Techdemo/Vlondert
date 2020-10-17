@@ -3,25 +3,29 @@ import { Header } from '../../modules/';
 
 import { Container } from './styled';
 
-const testFunction = () => {
-  alert("kansloos")
-}
-
 const NotificationScreen = () => {
+  const [alle, setAlle] = React.useState(true)
+  const [ongelezen, setOngelezen] = React.useState(false)
+
   return (
     <Container>
       <Header 
       title="Notificaties" 
-      buttons={[{
+      buttons={[
+        {
         label: "Alle notificaties", 
+        state: {alle},  
         action: () => {
-         testFunction()
+         setAlle(true)
+         setOngelezen(false)
         }
       },
       {
         label: "Ongelezen",
+        state: {ongelezen},
         action: () => {
-          testFunction()
+          setAlle(false)
+          setOngelezen(true)
         }
       } 
       ]} />

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const HeaderContainer = styled.div`
   background-color: ${props => props.theme.colors.green};
@@ -10,7 +11,7 @@ export const HeaderContainer = styled.div`
   padding-bottom: 5vh;
 `;
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled(motion.h1)`
   color: white;
   font-size: 24px; 
   font-family: 'Lato-Regular';

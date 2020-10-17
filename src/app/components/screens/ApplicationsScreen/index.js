@@ -1,7 +1,8 @@
 import React from 'react';
 import { Header } from '../../modules/';
 
-import { Container, CardList, Card } from './styled';
+import { Container, CardList } from './styled';
+import { Card } from './components/index';
 
 const ApplicationsScreen = () => {
   const [lopende, setLopende] = React.useState(true)
@@ -31,32 +32,14 @@ const ApplicationsScreen = () => {
         ]}
       />
       <CardList>
-        <Card
-          initial={{
-            opacity: 0, 
-            y: "-10px"
-          }}
-          animate={{
-            opacity: 1,
-            y: "0"
-          }}
-          transition={{ duration: 0.2, delay: 0.1 }}
-        >
-          <h2>ja is goed</h2>
-        </Card>
-        <Card
-          initial={{
-            opacity: 0, 
-            y: "-10px"
-          }}
-          animate={{
-            opacity: 1,
-            y: "0"
-          }}
-          transition={{ duration: 0.2, delay: 0.1 }}
-        >
-          <h2>Ja is goed</h2>
-        </Card>
+        <Card 
+          title="Mathenesserdijk" 
+          date="09-09-2020"
+        />
+        <Card 
+          title="Mathenesserdijk" 
+          date="01-08-2020"
+        />
       </CardList>
     </Container>
   )

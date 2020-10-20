@@ -37,7 +37,7 @@ const ApplicationsScreen = () => {
           date="09-09-2020"
         />
         <Card 
-          title="Mathenesserdijk" 
+          title="Bergweg" 
           date="01-08-2020"
         />
       </CardList>

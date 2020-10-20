@@ -5,7 +5,8 @@ export const CardContainer = styled(motion.div)`
   background-color: white; 
   margin-bottom: 7.5%;
   padding-top: 15px;
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
+  height: 4em;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 3px;
@@ -25,5 +26,19 @@ export const CardTitle = styled.h2`
 export const CardDate = styled.h3`
   font-family: 'Arial-Regular';
   font-size: 16px;
-  color: ${props => props.theme.colors.grey}
+  color: ${props => props.theme.colors.grey};
+  align-self: flex-start;
+`;
+
+export const CardIconContainer = styled.div`
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-evenly;
+  max-width: 25%;
+`
+
+export const CardFooter = styled.div`
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
 `;

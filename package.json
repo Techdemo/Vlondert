@@ -19,7 +19,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "recompose": "^0.30.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "vertical-timeline-component-react": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

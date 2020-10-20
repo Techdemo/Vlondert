@@ -1,7 +1,16 @@
 import React from 'react';
-import { CardContainer, CardTitle, CardDate } from './styled';
+import { useHistory } from 'react-router-dom';
+
+import { CardContainer, CardTitle, CardDate, CardIconContainer, CardFooter } from './styled';
+import { PersonGreenIcon, PersonGreyIcon } from '../../../../../components/icons/index';
 
 const Card = ({ title, date }) => {
+  let history = useHistory();
+
+  const redirect = (title, date) => {
+    history.push('/detailview', { params: {title: title, date: date }})
+  }
+  
   return (
     <CardContainer
       initial={{
@@ -13,9 +22,20 @@ const Card = ({ title, date }) => {
         y: "0"
       }}
       transition={{ duration: 0.2, delay: 0.1 }}
+      title
+      date
+      onClick={() => redirect(title, date)}
     >
       <CardTitle>{title}</CardTitle>
-      <CardDate>{date}</CardDate>
+      <CardFooter>
+        <CardDate>{date}</CardDate>
+        <CardIconContainer>
+          <PersonGreenIcon />
+          <PersonGreenIcon />
+          <PersonGreyIcon />
+          <PersonGreyIcon />
+        </CardIconContainer>
+      </CardFooter>
     </CardContainer>
   )
 }

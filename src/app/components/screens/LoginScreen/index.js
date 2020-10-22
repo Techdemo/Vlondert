@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { AuthContext } from '../../../components/modules/Firebase/authcontext';
 
 import { LoginUserForm } from './components';
+import { Container } from './styled';
 
 import * as ROUTES from '../../../../config/routes';
 
@@ -17,9 +18,9 @@ const LoginScreen = () => {
   }, [user])
 
   return (
-    <>
-      <LoginUserForm />
-    </>
+    <Container>
+       <LoginUserForm />
+    </Container>
   )
 }
 

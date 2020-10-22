@@ -5,6 +5,8 @@ import { useHistory } from "react-router-dom";
 import * as ROUTES from '../../../../../../config/routes';
 import { AuthContext } from '../../../../modules/Firebase/authcontext';
 
+import { Button, Form, Span, InputText } from './styled';
+
 const LoginUserForm = () => {
   let history = useHistory();
   const { register, handleSubmit, errors } = useForm();
@@ -21,13 +23,13 @@ const LoginUserForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input name="email" defaultValue="test" ref={register} />
-      <input name="password" ref={register({ required: true})} />
-      {errors.password && <span>password field is required</span>}
-      {errors.email && <span>password field is required</span>}
-      <input type="submit" /> 
-    </form>
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      <InputText placeholder="mailadres" name="email" defaultValue="fleuren.marcel@gmail.com" ref={register} />
+      <InputText placeholder="password" name="password" ref={register({ required: true})} />
+      {errors.password && <Span>password field is required</Span>}
+      {errors.email && <Span>password field is required</Span>}
+      <Button type="submit">Login</Button> 
+    </Form>
   )
 }
 

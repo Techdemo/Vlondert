@@ -6,7 +6,7 @@ import {dataOne, dataTwo, dataThree} from './data';
 import { OverlayContext } from '../../../../../components/modules/ApplicationOverlay/context';
 
 const MapContainer = () => {
-  const { active, setActive } = React.useContext(OverlayContext);
+  const { active, setActive, swipeActive, setSwipeActive } = React.useContext(OverlayContext);
 
   const polygonPaint = {
     'fill-color': '#008833',
@@ -38,7 +38,10 @@ const MapContainer = () => {
       center={[4.445014, 51.913833]}
       bearing={[20]}
       zoom={[19]}
-      onClick={() => setActive(false)}
+      onClick={() => {
+        setActive(false)
+        setSwipeActive(false)
+      }}
       pitch={[50]}
       containerStyle={{
         height: '100vh',

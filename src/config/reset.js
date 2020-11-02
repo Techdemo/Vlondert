@@ -49,6 +49,17 @@ const CssReset = createGlobalStyle`
   border-collapse: collapse;
   border-spacing: 0;
   }
+
+  @media	only screen and (-webkit-min-device-pixel-ratio: 1.3),
+  only screen and (-o-min-device-pixel-ratio: 13/10),
+  only screen and (min-resolution: 120dpi) {
+    /* Usually one should use this on dark background only
+    http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+    But: because we have enough pixels here (retina!) it shouldn't be a problem.
+    It just renders more beautiful */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
 `;
 
 export default CssReset

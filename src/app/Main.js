@@ -18,7 +18,8 @@ import {
   SettingsScreen, 
   AdminScreen, 
   NotificationScreen, 
-  ApplicationDetailView
+  ApplicationDetailView,
+  SwipeScreen
 } from './components/screens';
 import { Container } from './styled';
 // hier moet nog een complete container komen voor alle components in het scherm
@@ -40,6 +41,7 @@ const Main = () => {
             <ProtectedRoute authenticated={user} path={ROUTES.DETAILVIEW} component={ApplicationDetailView} />
           </Container>
           <ApplicationOverlay />
+          <SwipeScreen />
           {user ? (
             <Navigation />
           ) : null}
